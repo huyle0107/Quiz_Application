@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/answer_layout"
+    tools:context=".AnswerShow">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/subject_Header"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#00BCD4">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="center"
+                android:text="@string/ho_n_th_nh_b_i_l_m"
+                android:textColor="@color/black"
+                android:textSize="25sp"></TextView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/answer_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/subject_Header"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="left"
+            android:text="@string/s_c_u_ng"
+            android:textColor="@color/black"
+            android:textSize="25sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/Dapan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/answer_title"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:text="@string/p_n"
+            android:textColor="@color/black"
+            android:textSize="25sp"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/Dapan"
+            android:id="@+id/image_layout">
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+
+

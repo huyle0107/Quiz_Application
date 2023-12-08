@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Quizz_Application</string>
+    <string name="nh_p_m_code">Welcome to Quiz!!!</string>
+    <string name="quiz_pin">Quiz PIN</string>
+    <string name="invalid_quiz_pin">Invaliz_</string>
+    <string name="enter">Enter</string>
+    <string name="nh_p_t_n">Nhập tên</string>
+    <string name="nh_p_l_p">Nhập lớp</string>
+    <string name="c_u_h_i_1">Câu hỏi 1</string>
+    <string name="ch_n_p_n">Chọn đáp án:</string>
+    <string name="c_u_a">Câu A</string>
+    <string name="c_u_b">Câu B</string>
+    <string name="c_u_c">Câu C</string>
+    <string name="c_u_d">Câu D</string>
+    <string name="c_u_h_i_tr_c">Câu hỏi trước</string>
+    <string name="c_u_h_i_sau">Câu hỏi sau</string>
+    <string name="ho_n_th_nh_b_i_l_m">Hoàn thành bài làm</string>
+    <string name="s_c_u_ng">Số câu đúng: </string>
+    <string name="p_n">Đáp án</string>
+</resources>

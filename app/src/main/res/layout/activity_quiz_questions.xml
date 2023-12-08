@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz_Questions">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/subject_Header"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#00BCD4">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleView_history_question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scrollbars="none">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/question_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/subject_Header"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:text="@string/c_u_h_i_1"
+            android:textColor="@color/black"
+            android:textSize="25sp"></TextView>
+
+        <ImageView
+            android:id="@+id/img_question"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity = "fill_horizontal"
+            android:layout_below="@+id/question_title"
+            android:scaleType="fitCenter">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/Title_1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/img_question"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/ch_n_p_n"
+            android:textColor="@color/black"
+            android:textSize="20sp">
+        </TextView>
+
+        <RadioGroup
+            android:id="@+id/groupradio"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_below="@+id/Title_1"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radia_id1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="10dp"
+                android:text="@string/c_u_a"
+                android:textSize="20sp"
+                app:buttonTint="#000000"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/radia_id2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="10dp"
+                android:text="@string/c_u_b"
+                android:textSize="20sp"
+                app:buttonTint="#000000" />
+
+            <RadioButton
+                android:id="@+id/radia_id3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="10dp"
+                android:text="@string/c_u_c"
+                android:textSize="20sp"
+                app:buttonTint="#000000" />
+
+            <RadioButton
+                android:id="@+id/radia_id4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:paddingLeft="10dp"
+                android:text="@string/c_u_d"
+                android:textSize="20sp"
+                app:buttonTint="#000000" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/groupradio"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/PreviousBtn"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/c_u_h_i_tr_c">
+            </Button>
+
+            <Button
+                android:id="@+id/AfterBtn"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/c_u_h_i_sau">
+            </Button>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+
+

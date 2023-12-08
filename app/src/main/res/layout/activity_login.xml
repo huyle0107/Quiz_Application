@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <!-- Login Form -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="20dp"
+        android:src = "@drawable/titlepicture">
+    </ImageView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+        android:id="@+id/textInputLayout"
+        android:layout_width="290dp"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_focused_background">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/Id_Class"
+            android:hint="@string/quiz_pin"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:padding="20dp"
+            android:layout_height="wrap_content">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/errorLogin"
+        android:layout_marginBottom="20dp"
+        android:text="@string/invalid_quiz_pin"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/loadingLogin"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/EnterBtn"
+        android:text="@string/enter"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_width="290dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:padding="20dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
